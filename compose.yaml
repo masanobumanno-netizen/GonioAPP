@@ -1,0 +1,16 @@
+services:
+  shared:
+    build:
+      context: .
+      dockerfile: apps/shared-server/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5280:8080"
+    environment:
+      GONIO_SETUP_TOKEN: ${GONIO_SETUP_TOKEN:?Set a random setup token in .env}
+      DROPBOX_APP_KEY: ${DROPBOX_APP_KEY:-}
+      DROPBOX_REDIRECT_URI: ${DROPBOX_REDIRECT_URI:-}
+    volumes:
+      - gonio-shared:/data
+volumes:
+  gonio-shared:

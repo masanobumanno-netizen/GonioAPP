@@ -1,0 +1,10 @@
+**/bin
+**/obj
+**/.git
+.release-keys
+.env
+.env.*
+dist
+data
+vendor
+docs

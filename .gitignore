@@ -1,0 +1,13 @@
+node_modules/
+bin/
+obj/
+.env
+data/
+vendor/
+*.zip
+*.cab
+*.chm
+dist/
+
+.release-keys/
+*.private.pem

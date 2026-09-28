@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>GonioWeb</AssemblyName><Version>0.5.0</Version></PropertyGroup>
+  <ItemGroup>
+    <Content Include="../web/index.html;../web/style.css;../web/app.mjs;../web/db.mjs;../web/shared.mjs;../web/mock-worker.mjs" Link="wwwroot/apps/web/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../packages/measurement-core/index.mjs" Link="wwwroot/packages/measurement-core/index.mjs" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
